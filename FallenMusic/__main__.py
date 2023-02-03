@@ -58,7 +58,7 @@ async def fallen_startup():
     try:
         await app.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ʙᴏᴛ ✯\n\n𖢵 ɪᴅ : `{BOT_ID}`\n𖢵 ɴᴀᴍᴇ : {BOT_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{BOT_USERNAME}",
+            f"✯ ᴍᴜsɪᴄ ʙᴏᴛ ✯\n\n𖢵 ɪᴅ : `{BOT_ID}`\n𖢵 ɴᴀᴍᴇ : {BOT_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{BOT_USERNAME}",
         )
     except:
         LOGGER.error(
@@ -68,14 +68,14 @@ async def fallen_startup():
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
+            f"✯ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
         )
     except:
         LOGGER.error(
             f"{ASS_NAME} failed to send message at @{SUNAME}, please go & check."
         )
 
-    await app2.send_message(BOT_USERNAME, "/start")
+    await app2.send_message(BOT_USERNAME, "gendu")
 
     LOGGER.info(f"[•] Bot Started As {BOT_NAME}.")
     LOGGER.info(f"[•] Assistant Started As {ASS_NAME}.")
