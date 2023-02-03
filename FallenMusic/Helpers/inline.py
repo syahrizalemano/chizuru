@@ -38,6 +38,9 @@ buttons = InlineKeyboardMarkup(
             InlineKeyboardButton(text="‣‣I", callback_data="skip_cb"),
             InlineKeyboardButton(text="▢", callback_data="end_cb"),
         ]
+        [
+            InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")
+        ]
     ]
 )
 
