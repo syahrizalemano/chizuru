@@ -180,7 +180,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await fallen.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
-        await fallen.edit_text("{gay} ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ! 🔍")
+        await fallen.edit_text(f"{gay} ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ! 🔍")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
