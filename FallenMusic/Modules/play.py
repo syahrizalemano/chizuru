@@ -66,7 +66,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    gay = message.from_user.first_name
+    gay = message.from_user.mention
     fallen = await message.reply_text(f"» {gay} ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
         await message.delete()
