@@ -54,7 +54,7 @@ from FallenMusic.Helpers.active import add_active_chat, is_active_chat, stream_o
 from FallenMusic.Helpers.downloaders import audio_dl
 from FallenMusic.Helpers.errors import DurationLimitError
 from FallenMusic.Helpers.gets import get_file_name, get_url
-from FallenMusic.Helpers.inline import buttons
+from FallenMusic.Helpers.inline import buttons, close_key
 from FallenMusic.Helpers.queue import put
 from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
@@ -179,7 +179,7 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text(f"» {gay}, ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
+            return await fallen.edit_animation(animation="https://te.legra.ph/file/1b4eebbcbae7808c190cc.mp4", caption=f"» {gay}, ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?", reply_markup=InlineKeyboardMarkup(close_key))
         await fallen.edit_text(f"{gay} ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ! 🔍")
         query = message.text.split(None, 1)[1]
         try:
