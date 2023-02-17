@@ -32,7 +32,7 @@ from FallenMusic.Helpers.dossier import *
 
 
 @app.on_message(filters.command(["gendu"]) & ~filters.forwarded)
-@app.on_edited_message(filters.command(["start"]) & ~filters.forwarded)
+@app.on_edited_message(filters.command(["gendu"]) & ~filters.forwarded)
 async def fallen_st(_, message: Message):
     if message.chat.type == ChatType.PRIVATE:
         if len(message.text.split()) > 1:
