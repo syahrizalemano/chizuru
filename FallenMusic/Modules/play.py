@@ -179,7 +179,8 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_message(animation="https://te.legra.ph/file/1b4eebbcbae7808c190cc.mp4", caption=f"» {gay}, ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?", reply_markup=InlineKeyboardMarkup(close_key))
+            await fallen.delete()
+            return await fallen.reply_animation(animation="https://te.legra.ph/file/1b4eebbcbae7808c190cc.mp4", caption=f"» {gay}, ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?", reply_markup=InlineKeyboardMarkup(close_key))
         await fallen.edit_text(f"{gay} ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ! 🔍")
         query = message.text.split(None, 1)[1]
         try:
