@@ -86,7 +86,7 @@ async def fallen_st(_, message: Message):
             ok = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACkgdkIHD9TEVYxSrc4lUMNaUOemYXSgACzgQAApgw-VRMdA8rPAGl_y8E")
             ye = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACkghkIHD9lSHkNUwKkaz8I0V6NBoUVQACmAMAAsqyAVUnrDxZ-cDEsy8E")
             await asyncio.sleep(2)
-            await ok.delete(₹
+            await ok.delete()
             await ye.delete()
             await message.reply_animation(
                 animation=config.START_IMG,
