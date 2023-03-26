@@ -83,8 +83,8 @@ async def fallen_st(_, message: Message):
                     reply_markup=key,
                 )
         else:
-            ok = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACkgdkIHD9TEVYxSrc4lUMNaUOemYXSgACzgQAApgw-VRMdA8rPAGl_y8E")
-            ye = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACkghkIHD9lSHkNUwKkaz8I0V6NBoUVQACmAMAAsqyAVUnrDxZ-cDEsy8E")
+            ok = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACk4pkIJFJLEqTrmsg6EvWJfihq85UIwACdgcAAprRqFRI-ogjJhYp6y8E")
+            ye = await message.reply_sticker(sticker="CAACAgUAAx0CVbWIYQACk4lkIJFIsJtKpjTNtqHCdLvdlhtnhwACGggAAjuYsFRAdi8B574tGi8E")
             await asyncio.sleep(2)
             await ok.delete()
             await ye.delete()
