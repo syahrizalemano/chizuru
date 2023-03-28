@@ -179,7 +179,6 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            await fallen.delete()
             return await fallen.edit_text(f"» {gay}, ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
         await fallen.edit_text(f"{gay} ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ! 🔍")
         query = message.text.split(None, 1)[1]
