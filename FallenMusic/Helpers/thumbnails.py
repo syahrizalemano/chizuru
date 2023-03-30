@@ -109,13 +109,13 @@ async def gen_thumb(videoid, user_id):
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"FallenMusic/Helpers/utils/circle.png")
-        image1 = changeImageSize(1280, 720, youtube)
+        image1 = changeImageSize(1280, 780, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
-        image3 = changeImageSize(1280, 720, bg)
+        image3 = changeImageSize(1280, 780, bg)
         image5 = image3.convert("RGBA")
         Image.alpha_composite(background, image5).save(f"cache/temp{videoid}.png")
 
@@ -151,7 +151,7 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"STARTED PLAYING",
+                f"ᴄʜɪᴢᴜʀᴜ ꜱᴛʀᴇᴀᴍɪɴɢ",
                 fill="white",
                 stroke_width=3,
                 stroke_fill="grey",
@@ -254,9 +254,9 @@ async def gen_qthumb(videoid, user_id):
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"FallenMusic/Helpers/utils/circle.png")
-        image1 = changeImageSize(1280, 720, youtube)
+        image1 = changeImageSize(1280, 780, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        background = image2.filter(filter=ImageFilter.BoxBlur(20))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
